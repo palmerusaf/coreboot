@@ -6,7 +6,6 @@ defconfig
 .coreboot-version
 .xcompile
 .ccwrap
-build/
 coreboot-builds/
 coreboot-builds*/
 

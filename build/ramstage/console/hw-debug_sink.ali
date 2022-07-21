@@ -1,0 +1,124 @@
+V "GNAT Lib v11"
+A -gnatwa
+A -nostdinc
+A -Os
+A -Wuninitialized
+A -Wall
+A -Werror
+A -Wstrict-aliasing
+A -Wshadow
+A --RTS=build/libgnat-x86_32/
+A -gnatp
+A -g
+A -fno-common
+A -fomit-frame-pointer
+A -ffunction-sections
+A -fdata-sections
+A -gnatwa
+A -gnatw.e
+A -gnatwe
+A -gnatwD
+A -gnatw.H
+A -gnatwH
+A -gnatwT
+A -gnatwU
+A -gnatw.U
+A -gnatw.W
+A -gnatw.Y
+A -gnatyN
+A -m32
+A -fuse-ld=bfd
+A -fno-stack-protector
+A -mtune=i386
+A -march=i386
+P FX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_CALENDAR
+RR NO_DISPATCH
+RR NO_EXCEPTION_HANDLERS
+RR NO_FIXED_POINT
+RR NO_FLOATING_POINT
+RR NO_IO
+RR NO_IMPLICIT_DYNAMIC_CODE
+RR NO_IMPLICIT_HEAP_ALLOCATIONS
+RR NO_INITIALIZE_SCALARS
+RR NO_LOCAL_ALLOCATORS
+RR NO_RECURSION
+RR NO_SECONDARY_STACK
+RR NO_STREAMS
+RR NO_TASKING
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RR STATIC_STORAGE_SIZE
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+RR NO_WIDE_CHARACTERS
+
+U hw.debug_sink%b	hw-debug_sink.adb	5ebdb3aa NE OO PK IU
+W cb%s			cb.ads			cb.ali
+W cb.config%s		cb-config.ads		cb-config.ali
+W hw%s			hw.ads			hw.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+U hw.debug_sink%s	hw-debug_sink.ads	1b7207ae EE NE OO PK IU
+W hw%s			hw.ads			hw.ali
+
+D cb.ads		20220721102343 e6df39c3 cb%s
+D cb-config.ads		20220721113654 827ff63c cb.config%s
+D hw.ads		20220721102731 349e873c hw%s
+D hw-debug_sink.ads	20220721102343 2fec8092 hw.debug_sink%s
+D hw-debug_sink.adb	20220721102343 6eba5a63 hw.debug_sink%b
+D interfac.ads		20220721113655 8908571f interfaces%s
+D i-c.ads		20220721113655 9d949f67 interfaces.c%s
+D system.ads		20220721113655 21923ced system%s
+D s-parame.ads		20220721113655 c706fdbb system.parameters%s
+D gnat.adc		20220721102343 00000000
+G a e
+G c Z s b [put hw__debug_sink 5 14 none]
+G c Z s b [put_char hw__debug_sink 7 14 none]
+G c Z s b [new_line hw__debug_sink 9 14 none]
+X 1 cb.ads
+1K9*CB 2e7 5|4r6 6r5
+X 2 cb-config.ads
+1K12*Config 623e14 5|4w9 33r13 51r13
+518b4*CONSOLE_CBMEM{boolean} 5|33r20 51r20
+X 3 hw.ads
+17K9*HW 91e7 4|3r9 11r5 5|9r14 64r5
+X 4 hw-debug_sink.ads
+3K12*Debug_Sink 3|17k9 4|11l8 11e18 5|9b17 64l8 64t18
+5U14*Put 5>19 5|27b14 43l8 43t11
+5a19 Item{string} 5|27b19 34r24 35r51 39r21 40r49
+7U14*Put_Char 7>24 5|45b14 57l8 57t16 61s7
+7e24 Item{character} 5|45b24 52r48 55r46
+9U14*New_Line 5|59b14 62l8 62t16
+X 5 hw-debug_sink.adb
+11V13 console_log_level{7|35I9} 12>7 14b<c,console_log_level>22 30s10 48s10
+12i7 msg_level{7|35I9}
+16N4 Msg_Level_BIOS_DEBUG 30r29 48r29
+18N4 CONSOLE_LOG_FAST 32r24 50r24
+19N4 CONSOLE_LOG_ALL 38r27 54r27
+21U14 cbmemc_tx_byte 21>30 22b<c,cbmemc_tx_byte>22 35s16 52s13
+21e30 chr{7|69E9}
+24U14 console_tx_byte 24>31 25b<c,console_tx_byte>22 40s13 55s10
+24e31 chr{7|69E9}
+29i7 console_log{7|35I9} 32r10 38r13
+34i17 Idx{integer} 35r57
+39i14 Idx{integer} 40r55
+47i7 console_log{7|35I9} 50r10 54r13
+X 6 interfac.ads
+38K9*Interfaces 5|3r6 7r10 12r19 13r14 21r36 24r37 29r30 35r32 40r30 47r30
+. 52r29 55r27 6|161e15
+X 7 i-c.ads
+18K20*C 5|3w17 7r21 12r30 13r25 21r47 24r48 29r41 35r43 40r41 47r41 52r40
+. 55r38 7|81e17
+35I9*int<integer> 5|7r23 12r32 13r27 29r43 47r43
+69E9*char<character> 5|21r49 24r50
+73V13*To_C{69E9} 5|35s45 40s43 52s42 55s40
+
